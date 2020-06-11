@@ -94,3 +94,16 @@ class TestExample:
         errors.error_amount(res)
 
         assert 'ok' == errors.error_amount(res)
+
+    @staticmethod
+    def test_success_amount_minus():
+        amount = -100
+        month = 10
+        year = 22
+        orderid = datasets.order_id()
+        data = datasets.all_positive(orderid, amount, month, year)
+        res = PaytureClient.block(data).text
+
+        errors.error_amount(res)
+
+        assert 'ok' == errors.error_amount(res)
