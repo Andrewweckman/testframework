@@ -1,0 +1,12 @@
+pytest
+requests
+pytest-html
+pytest-logger
+allure-pytest
+pytest-testconfig
+faker
+Faker
+stringgenerator
+tox
+
+
